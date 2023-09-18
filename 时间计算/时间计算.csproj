@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>时间计算</RootNamespace>
     <AssemblyName>时间计算</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>

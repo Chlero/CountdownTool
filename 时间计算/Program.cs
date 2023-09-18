@@ -5,17 +5,17 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace 时间计算 //Verson 3.3 beta 1
+namespace 时间计算 //Verson 3.3 RC 1
 {
     internal class Program
     {
         static int num = 0;
         static bool useList = false;
         static DateTime Now;
-        static string ProcessingSecond(long se)
+        static string ProcessingSecond(long second)
         {
             int sum = 1;
-            string useSecond = se.ToString();
+            string useSecond = second.ToString();
             for (int i = useSecond.Length - 1; i > 0; i--)
             {
                 if (sum == 4)
@@ -34,7 +34,7 @@ namespace 时间计算 //Verson 3.3 beta 1
             if (useDay < 0) return;
 
             string useSecond = ProcessingSecond(lastSecond);
-            if (useDay <= 31)
+            if (useDay <= 15)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("从现在开始到" + name + "只剩" + useDay + "天，也就是" + useSecond + "秒");
@@ -65,8 +65,8 @@ namespace 时间计算 //Verson 3.3 beta 1
                 if (useList)
                 {
                     Console.WriteLine("\n\n目标清单：");
-                    PrintList("try open ai Chat GPT");
-                    PrintList("Azure open ai in 小幻助手");
+                    PrintList("try Chat GPT");
+                    PrintList("Azure OpenAI in 小幻助手");
                     PrintList("SO-VITS 重新训练模型");
                 }
                 num = 0;
