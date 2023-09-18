@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace 时间计算 //Verson 3.2
+namespace 时间计算 //Verson 3.3 beta 1
 {
     internal class Program
     {
@@ -49,15 +49,17 @@ namespace 时间计算 //Verson 3.2
         }
         static void Main()
         {
-            Console.Title = "时间程序";
+            Console.Title = "时间计算";
             Console.CursorVisible = false;
-            DateTime dt1 = new DateTime(2023, 9, 16, 9, 30, 00);
+            DateTime dt1 = new DateTime(2023, 10, 21, 8, 00, 00);
             DateTime dt2 = new DateTime(2026, 6, 17, 0, 00, 00);
             DateTime dt3 = new DateTime(2029, 6, 7, 0, 00, 00);
+            DateTime dt4 = new DateTime(2023, 10, 1, 0, 00, 00);
             while (true)
             {
                 Now = DateTime.Now;
-                Print("SCP-J考试", dt1);
+                Print("国庆长假（好耶ヽ(` ▽ `)ノ  ", dt4);
+                Print("SCP-J2 考试", dt1);
                 Print("中考", dt2);
                 Print("高考", dt3);
                 if (useList)
@@ -68,7 +70,7 @@ namespace 时间计算 //Verson 3.2
                     PrintList("SO-VITS 重新训练模型");
                 }
                 num = 0;
-                Thread.Sleep(1000);
+                Thread.Sleep(850);
                 Console.Clear();
             }
         }
