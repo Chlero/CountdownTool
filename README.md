@@ -9,7 +9,7 @@ Print(string name, DateTime time)：添加一个倒计时项目
 
 PrintList(string name)：添加一个待办项目
 
-最近的版本: 3.3 RC 1
+最近的版本: 3.3 RC 2
 
 <br>
 
