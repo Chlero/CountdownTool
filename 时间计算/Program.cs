@@ -5,11 +5,15 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+<<<<<<< Updated upstream
 namespace 时间计算 //Verson 3.3 RC 1
+=======
+namespace 时间计算 //Verson 3.3 beta 2
+>>>>>>> Stashed changes
 {
     internal class Program
     {
-        static int num = 0;
+        static int num;
         static bool useList = false;
         static DateTime Now;
         static string ProcessingSecond(long second)
@@ -44,19 +48,20 @@ namespace 时间计算 //Verson 3.3 RC 1
         }
         static void PrintList(string name)
         {
-            num++;
             Console.WriteLine(num + "." + name);
+            num++;
         }
         static void Main()
         {
             Console.Title = "时间计算";
             Console.CursorVisible = false;
+            DateTime dt4 = new DateTime(2023, 10, 1, 0, 00, 00);
             DateTime dt1 = new DateTime(2023, 10, 21, 8, 00, 00);
             DateTime dt2 = new DateTime(2026, 6, 17, 0, 00, 00);
             DateTime dt3 = new DateTime(2029, 6, 7, 0, 00, 00);
-            DateTime dt4 = new DateTime(2023, 10, 1, 0, 00, 00);
             while (true)
             {
+                num = 1;
                 Now = DateTime.Now;
                 Print("国庆长假（好耶ヽ(` ▽ `)ノ  ", dt4);
                 Print("SCP-J2 考试", dt1);
@@ -69,8 +74,7 @@ namespace 时间计算 //Verson 3.3 RC 1
                     PrintList("Azure OpenAI in 小幻助手");
                     PrintList("SO-VITS 重新训练模型");
                 }
-                num = 0;
-                Thread.Sleep(850);
+                Thread.Sleep(900);
                 Console.Clear();
             }
         }
