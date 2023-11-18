@@ -5,11 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-<<<<<<< Updated upstream
-namespace 时间计算 //Verson 3.3 RC 1
-=======
-namespace 时间计算 //Verson 3.3 beta 2
->>>>>>> Stashed changes
+namespace 时间计算 //Verson 3.3
 {
     internal class Program
     {
@@ -55,18 +51,14 @@ namespace 时间计算 //Verson 3.3 beta 2
         {
             Console.Title = "时间计算";
             Console.CursorVisible = false;
-            DateTime dt4 = new DateTime(2023, 10, 1, 0, 00, 00);
-            DateTime dt1 = new DateTime(2023, 10, 21, 8, 00, 00);
-            DateTime dt2 = new DateTime(2026, 6, 17, 0, 00, 00);
-            DateTime dt3 = new DateTime(2029, 6, 7, 0, 00, 00);
+            DateTime dt1 = new DateTime(2026, 6, 17, 0, 00, 00);
+            DateTime dt2 = new DateTime(2029, 6, 7, 0, 00, 00);
             while (true)
             {
                 num = 1;
                 Now = DateTime.Now;
-                Print("国庆长假（好耶ヽ(` ▽ `)ノ  ", dt4);
-                Print("SCP-J2 考试", dt1);
-                Print("中考", dt2);
-                Print("高考", dt3);
+                Print("中考", dt1);
+                Print("高考", dt2);
                 if (useList)
                 {
                     Console.WriteLine("\n\n目标清单：");
