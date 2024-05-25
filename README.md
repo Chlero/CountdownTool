@@ -5,8 +5,8 @@
 
 <br>
 
-Print(string name, DateTime time)：添加一个倒计时项目 [暂时禁用]
+Print(string name, DateTime time)：添加一个倒计时项目
 
-PrintList(string name)：添加一个待办项目
+PrintList(string name)：添加一个待办项目 [暂时禁用]
 
 最近的版本: 4.0
