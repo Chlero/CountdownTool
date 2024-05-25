@@ -13,10 +13,10 @@ C:\Users\Admin\OneDrive\时间计算\bin\Debug\时间计算.pdb
 C:\Users\Admin\OneDrive\时间计算\obj\Debug\时间计算.csproj.AssemblyReference.cache
 C:\Users\Admin\OneDrive\时间计算\obj\Debug\时间计算.csproj.SuggestedBindingRedirects.cache
 C:\Users\Admin\OneDrive\时间计算\obj\Debug\时间计算.csproj.CoreCompileInputs.cache
-C:\Users\YCR_1\Documents\GitHub\Countdown-tool\时间计算\bin\Debug\时间计算.exe.config
-C:\Users\YCR_1\Documents\GitHub\Countdown-tool\时间计算\bin\Debug\时间计算.exe
-C:\Users\YCR_1\Documents\GitHub\Countdown-tool\时间计算\bin\Debug\时间计算.pdb
-C:\Users\YCR_1\Documents\GitHub\Countdown-tool\时间计算\obj\Debug\时间计算.csproj.AssemblyReference.cache
-C:\Users\YCR_1\Documents\GitHub\Countdown-tool\时间计算\obj\Debug\时间计算.csproj.CoreCompileInputs.cache
-C:\Users\YCR_1\Documents\GitHub\Countdown-tool\时间计算\obj\Debug\时间计算.exe
-C:\Users\YCR_1\Documents\GitHub\Countdown-tool\时间计算\obj\Debug\时间计算.pdb
+D:\时间计算\bin\Debug\时间计算.exe.config
+D:\时间计算\bin\Debug\时间计算.exe
+D:\时间计算\bin\Debug\时间计算.pdb
+D:\时间计算\obj\Debug\时间计算.csproj.AssemblyReference.cache
+D:\时间计算\obj\Debug\时间计算.csproj.CoreCompileInputs.cache
+D:\时间计算\obj\Debug\时间计算.exe
+D:\时间计算\obj\Debug\时间计算.pdb

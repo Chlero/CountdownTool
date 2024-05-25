@@ -1,21 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
+using System.IO;
 
-namespace 时间计算 //Verson 3.3
+namespace 时间计算 //Verson 3.3 beta 1
 {
     internal class Program
     {
-        static int num;
+        static int num = 0;
         static bool useList = false;
         static DateTime Now;
-        static string ProcessingSecond(long second)
+        const int MAXLEN = 114514;
+        static string[] Str = new string[MAXLEN];
+        static DateTime[] dt = new DateTime[MAXLEN];
+        static StreamReader str = new StreamReader("D:\\时间计算\\config.txt");
+        static string ProcessingSecond(long se)
         {
             int sum = 1;
-            string useSecond = second.ToString();
+            string useSecond = se.ToString();
             for (int i = useSecond.Length - 1; i > 0; i--)
             {
                 if (sum == 4)
@@ -34,7 +35,7 @@ namespace 时间计算 //Verson 3.3
             if (useDay < 0) return;
 
             string useSecond = ProcessingSecond(lastSecond);
-            if (useDay <= 15)
+            if (useDay <= 31)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("从现在开始到" + name + "只剩" + useDay + "天，也就是" + useSecond + "秒");
@@ -44,29 +45,35 @@ namespace 时间计算 //Verson 3.3
         }
         static void PrintList(string name)
         {
-            Console.WriteLine(num + "." + name);
             num++;
+            Console.WriteLine(num + "." + name);
         }
         static void Main()
         {
             Console.Title = "时间计算";
             Console.CursorVisible = false;
-            DateTime dt1 = new DateTime(2026, 6, 17, 0, 00, 00);
-            DateTime dt2 = new DateTime(2029, 6, 7, 0, 00, 00);
+
+            string line; int tot = 0;
+            line = str.ReadLine();
+            while (line != null)
+            {
+                string[] words = line.Split('#');
+                Str[++tot] = words[0];
+                dt[tot] = DateTime.ParseExact(words[1], "yyyy-MM-dd-HH-mm-ss", System.Globalization.CultureInfo.CurrentCulture);
+                line = str.ReadLine();
+            }
             while (true)
             {
-                num = 1;
                 Now = DateTime.Now;
-                Print("中考", dt1);
-                Print("高考", dt2);
+                for (int i = 1; i <= tot; i++)
+                    Print(Str[i], dt[i]);
                 if (useList)
                 {
                     Console.WriteLine("\n\n目标清单：");
-                    PrintList("try Chat GPT");
-                    PrintList("Azure OpenAI in 小幻助手");
-                    PrintList("SO-VITS 重新训练模型");
+                    //暂时废弃
                 }
-                Thread.Sleep(900);
+                num = 0;
+                Thread.Sleep(850);
                 Console.Clear();
             }
         }

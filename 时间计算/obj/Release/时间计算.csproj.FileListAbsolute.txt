@@ -1,0 +1,7 @@
+D:\时间计算\bin\Release\时间计算.exe.config
+D:\时间计算\bin\Release\时间计算.exe
+D:\时间计算\bin\Release\时间计算.pdb
+D:\时间计算\obj\Release\时间计算.csproj.AssemblyReference.cache
+D:\时间计算\obj\Release\时间计算.csproj.CoreCompileInputs.cache
+D:\时间计算\obj\Release\时间计算.exe
+D:\时间计算\obj\Release\时间计算.pdb
