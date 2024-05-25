@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Threading;
 using System.IO;
+using System.Text;
 
-namespace 时间计算 //Verson 3.3 beta 1
+namespace 时间计算
 {
     internal class Program
     {
@@ -12,7 +13,7 @@ namespace 时间计算 //Verson 3.3 beta 1
         const int MAXLEN = 114514;
         static string[] Str = new string[MAXLEN];
         static DateTime[] dt = new DateTime[MAXLEN];
-        static StreamReader str = new StreamReader("D:\\时间计算\\config.txt");
+        static StreamReader str = new StreamReader("C:\\ProgramData\\CountdownTool-config.txt");
         static string ProcessingSecond(long se)
         {
             int sum = 1;
@@ -69,7 +70,7 @@ namespace 时间计算 //Verson 3.3 beta 1
                     Print(Str[i], dt[i]);
                 if (useList)
                 {
-                    Console.WriteLine("\n\n目标清单：");
+                    Console.WriteLine("\n\n目标清单:\n");
                     //暂时废弃
                 }
                 num = 0;
