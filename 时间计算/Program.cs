@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading;
 using System.IO;
-using System.Text;
 
 namespace 时间计算
 {
@@ -33,7 +32,7 @@ namespace 时间计算
         {
             long lastSecond = (long)new TimeSpan(time.Ticks - Now.Ticks).TotalSeconds;
             long useDay = (long)new TimeSpan(time.Ticks - Now.Ticks).TotalDays;
-            if (useDay < 0) return;
+            if (lastSecond < 0) return;
 
             string useSecond = ProcessingSecond(lastSecond);
             if (useDay <= 31)
@@ -74,8 +73,8 @@ namespace 时间计算
                     //暂时废弃
                 }
                 num = 0;
-                Thread.Sleep(850);
-                Console.Clear();
+                Thread.Sleep(1000);
+                Console.SetCursorPosition(0, 0);
             }
         }
     }
